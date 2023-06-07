@@ -1,8 +1,29 @@
 
 export default function Home() {
   return (
-    <div className="h-screen bg-zinc-950 p-6 text-zinc-50">
-      <h1 className="text-4xl font-bold">Sua cápsula do tempo </h1>
-    </div>
+    <main className="grid grid-cols-2 min-h-screen">
+      {/* left */}
+      <div className="flex flex-col items-start justify-between px-28 py-16 relative overflow-hidden border-r border-white/10">
+        
+        {/* blur */}
+        <div className= "absolute right-0 top-1/2 h-[288px] w-[526px] bg-purple-700 opacity-50 -translate-y-1/2 translate-x-1/2 rounded-full blur-full"/>
+        
+        {/* stripes */}
+        <div className="absolute bottom-0 right-2 top-0 w-2 bg-stripes"/>
+      </div>
+
+
+      {/* right */}
+      <div className="flex flex-col p-16">
+        <div className="flex flex-1 items-center justify-center">
+          <p className="text-center leading-relaxed w-[360px]">
+            Você não registrou nenhum momento, comece a {''}
+            <a href="" className="font-bold underline hover:text-gray-50">
+              criar agora!
+            </a>
+          </p>
+        </div>
+      </div>
+    </main>
   )
 }
