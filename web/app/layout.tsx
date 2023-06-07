@@ -7,7 +7,7 @@ const roboto = Roboto({
  })
 const baiJamjuree = BaiJamjuree({ 
   subsets: ['latin'], 
-  weight: '700'  
+  weight: '700',
   variable: '--font-bai-jamjuree'
 })
 
