@@ -83,7 +83,10 @@ module.exports = {
       
       backgroundSize: {
         stripes:'100% 8px',
-      }
+      },
+      fontSize : {
+        '5xl': '2.5rem',
+      },
     },
   },
   plugins: [],
