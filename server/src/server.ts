@@ -1,13 +1,13 @@
-import fastify from 'fastify';
-import { PrismaClient } from '@prisma/client';
+import fastify from 'fastify'
+import {memoriesRoutes} from './routes/memories'
 
-const app = fastify();
-const prisma = new PrismaClient();
+const app = fastify()
 
-app.get('/users', async () => {
-  const users = await prisma.user.findMany();
-  return users;
-});
+
+/**
+ * Registers the memories routes.
+ */
+app.register(memoriesRoutes)
 
 app
   .listen({
